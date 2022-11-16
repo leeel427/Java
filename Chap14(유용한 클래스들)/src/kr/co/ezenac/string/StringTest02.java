@@ -1,0 +1,20 @@
+package kr.co.ezenac.string;
+
+public class StringTest02 {
+	
+	public static void main(String[] args) {
+		String java = new String("java");
+		String sql = new String("sql");
+		
+		System.out.println(System.identityHashCode(java));
+		System.out.println();
+		
+		java = java.concat(sql);
+		
+		System.out.println(java);
+		System.out.println(System.identityHashCode(java));
+		System.out.println();
+		
+	}
+
+}
